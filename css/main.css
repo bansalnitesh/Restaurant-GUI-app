@@ -1,0 +1,837 @@
+
+
+/* RESET CSS ////////////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS /////////////////////////////////////////////// */
+
+/* app font */
+@font-face {
+    font-family: "AppFont";
+    src: url(fonts/Attractive-Regular.otf);
+}
+
+/* restaurant 1 fonts */
+@font-face {
+    font-family: "Rest1FontTitle";
+    src: url(fonts/HammersmithOne.ttf);
+}
+
+@font-face {
+    font-family: "Rest1FontBody";
+    src: url(fonts/Quicksand-Regular.otf);
+}
+
+@font-face {
+    font-family: "Rest1FontBodyBold";
+    src: url(fonts/Quicksand-Bold.otf);
+}
+
+/* GENRAL APP STYLES /////////////////////////////////// */
+
+body {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+main {
+    background-color: #fff;
+    position: absolute;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+}
+
+section {
+    background: #FFF;
+    overflow: auto;
+    padding-top: 70px;
+}
+.home{
+    padding-top: 0px;
+    margin-bottom: 80px;
+}
+
+
+/* SPLASH SCREEN ////////////////////////////////////////// */
+
+#splash {
+    background-image: url(../img/splash_back.png);
+    background-color: black;
+    background-size: cover;
+    font-family: 'Shrikhand', cursive;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+#splash_container {
+    font-size: 35px;
+    color: #ff5252;
+    text-align: center;
+    border: none;
+    align-self: center;
+}
+
+
+/* LANDING SCREEN ///////////////////////////////////////// */
+
+#landing {
+    font-family: "Constantia", sans-serif;
+	background-color: #fff;
+    background-size: cover;
+    padding-top: 70px;
+}
+#landing .sectionBanner{
+    font-size: 25px;
+    text-align: center;
+}
+
+.landingLogos {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.crispy {
+    width: 75%;
+    height: auto;
+    opacity: 0.85;
+    border-radius: 30px;
+    -webkit-box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+-moz-box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+}
+
+.Ceviche {
+	width: 75%;
+    height: auto;
+    opacity: 0.85;
+    border-radius: 30px;
+    -webkit-box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+-moz-box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+}
+
+.Birch_Bistro{
+	width: 75%;
+    height: auto;
+    opacity: 0.85;
+    border-radius: 30px;
+    -webkit-box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+-moz-box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+box-shadow: -6px 7px 5px -4px rgba(255,82,82,0.12);
+}
+.crispy:hover, .Ceviche:hover, .Birch_Bistro:hover{
+    opacity: 1;
+    transition: all 0.30s ease-in-out;
+	scale: 1.05;
+}
+#landing footer{
+    border: none;
+}
+
+/* MENU ////////////////////////////////////////////// */
+
+#menu {
+    font-family: "AppFont", sans-serif;
+    background: #ff5252;
+    padding-top: 80px;
+}
+
+#menu header {
+    padding: 15px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    line-height: 100%;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+}
+#menu h2{
+    margin-top: 5px;
+}
+
+.userid{
+	width: 45px;
+	height: 45px;
+}
+
+.menuBtn {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.menuBtn img {
+    width: 25px;
+    height: auto;
+    margin-right: 7px;
+}
+
+.menuBtn span {
+    display: block;
+    margin-top: 2px;
+}
+
+.contactIcon {
+    margin-top: 3px;
+}
+
+
+
+/* SHARED RESTAURANT /////////////////////////////////// */
+
+/* header/footer */
+.hamburger{
+    width: 64px;
+height: auto;
+position: absolute;
+z-index: 999;
+left: -5px;
+top: 3px;
+
+}
+.hamburger_Pat{
+    width: 70px;
+    position: relative;
+    margin-top: 40px;
+}
+header{
+    background: none;
+}
+header h1 {
+    color: #FFF;
+}
+footer{
+    display: flex;
+    height: 40px;
+    justify-content: space-evenly;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top:  #f3f1f1 5px solid;
+    width: 100%;
+}
+footer div {
+    align-items: center;
+    color: #FFF;
+    width: 60px;
+    cursor: pointer;
+    
+}
+.homeIcon img{
+    padding-left: 13px;
+}
+footer img {
+    margin-top: 2px;
+    height: 30px;
+    width: auto;
+    position: absolute;
+    padding-left: 17px;
+}
+
+
+
+
+/* general section */
+
+.intro_photo{
+	width: 100%;
+	height: 355px;
+}
+.sectionContainer {
+    overflow: auto;
+    color: #000;
+    margin-bottom: 50px;
+    margin-top: -5px;
+}
+
+/* home section */
+.photoAddress {
+    font-family: "Rest1FontTitle", sans-serif;
+    padding: 0 10px;
+    text-align: right;
+    margin-top: -120px;
+}
+
+.homeImg {
+    width: 95px;
+    height: 89px;
+}
+
+.photoAddress p {
+    font-size: 10px;
+}
+
+.timing{
+    margin-top: 10px;
+	width: 20px;
+	height: 20px;
+}
+.time{
+    display: flex;
+    justify-content: flex-end;
+}
+.rating {
+    width: 100px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.photoCount {
+    padding: 1px;
+    width: 148px;
+    margin-top: 15px;
+}
+
+.location{
+    margin-top: 10px;
+}
+.location img{
+    width: 40px;
+    height: 80%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+#loc, #hours{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.location h3{
+    margin-left: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+.space{
+	width: 100%;
+	height: 10px;
+	background-color: #B1B1B1;
+	margin-top: 10px;
+}
+.options div{
+    margin-bottom: 10px;
+    border: gainsboro 2px solid;
+    border-radius: 20px;
+}
+.nightly{
+    font-family: "Rest1FontBody", sans-serif;
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+    background-color: #FDF9F9;
+    cursor: pointer;
+}
+
+.reservation{
+    font-family: "Rest1FontBody", sans-serif;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+    background-color: #FDF9F9;
+    cursor: pointer;
+}
+
+.takeout{
+    font-family: "Rest1FontBody", sans-serif;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+    background-color: #FDF9F9;
+    cursor: pointer;
+}
+
+.search {
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+
+
+.reviews {
+    margin: 20px;
+}
+
+.profile {
+    text-align: left;
+    border-bottom: solid 1px #000;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+
+.profile img {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+.profile p:last-child {
+    margin-top: 5px;
+}
+
+.reviews p:last-child {
+    text-align: left;
+    margin-top: 10px;   
+}
+
+/* general specials/reservations */
+
+
+
+.specials img{
+    border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.sectionBanner, .sectionbanner{
+	background: #fff;
+	text-align: right;
+	font-size: 23px;
+	border-radius: 8px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #ff5252;
+	height: 45px;
+    width: 100%;
+    margin-top: -70px;
+    border-bottom: rgb(228, 228, 228) 3px solid;
+    padding: 10px;
+}
+.meal1, .meal2, .meal3, .meal4 {
+	width: 96%;
+    background: #fbfbfb;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+    box-shadow: black 5px;
+    padding-bottom: 10px;
+}
+
+.meal1 h2, .meal2 h2, .meal3 h2, .meal4 h2{
+    font-size: 19px;
+    text-align: left;
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.meal1 p1, .meal2 p1, .meal3 p1, .meal4 p1{
+    font-size: 14px;
+    font-weight: normal;
+}
+.meal1 img{
+    width: 100%;
+}
+.meal2 img{
+    width: 100%;
+}
+.meal3 img{
+    width: 100%;
+}
+.meal4 img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.mealdetails{
+        position: absolute;
+        margin-top: -47px;
+        background-color: #fbfbfb;
+        width: 100%;
+        padding-left: 10px;
+}
+
+
+/* reservations section */
+.reservations .sectionContainer {
+    border-top: none;
+    margin-top: 0px;
+    text-align: left;
+    padding: 10px;
+    padding-top: 0;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+
+.reservations h2 {
+    margin-top: 10px;
+}
+
+label {
+    display:contents;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border: solid 1px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #666;
+    background: #FFF;
+}
+
+
+.reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+
+
+/* RESTAURANT 1 ////////////////////////////////////// */
+
+/* general */
+#rest1 {
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+/* general section */
+
+#rest1 .profileBold {
+    font-family: "Rest1FontBodyBold", sans-serif;
+}
+
+/* header/footer */
+#rest1 header {
+    font-family: "Rest1FontTitle", sans-serif;
+    background: none;
+    border-bottom: solid 5px #ff5252;
+}
+
+#rest1 footer {
+    background: #fff;
+}
+
+
+/* footer subnav */
+#rest1 .logo {
+    width: 80%;
+    height: auto;
+    margin: 15px;
+}
+
+/* home */
+#rest1 .bar {
+    background: #ff5252;
+    padding: 3px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+#rest1 .photoCount {
+    border-color: #ff5252;
+}
+
+#rest1 .hours h2 {
+    color: #ff5252;
+    border-bottom-color: #ff5252;
+}
+
+#rest1 .hours p {
+    color: #ff5252;
+}
+
+#rest1 .profile {
+    border-bottom-color: #ff5252;
+}
+
+/* specials */
+#rest1 .nightContainer {
+    border-bottom-color: #ff5252;
+}
+
+#rest1 .sub {
+    color: #ff5252;
+}
+
+/* reservations */
+#rest1 .reservations .sectionContainer {
+    color: #ff5252;
+}
+
+#rest1 .reservations h2 {
+    border-bottom: solid 1px #fff;
+}
+
+#rest1 input, #rest1 select, #rest1 textarea {
+    border-color: #ff5252;
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+#rest1 input:focus, #rest1 select:focus, #rest1 textarea:focus {
+    outline: none;
+    background: rgba(175, 211, 90, 0.05);
+}
+
+#rest1 .reserve {
+    border-color: #FFF !important;
+    color: #000;
+    background: #ff5252;
+}
+
+#rest1 .reserve:hover {
+    border-color: #ff5252 !important;
+    color: #ff5252;
+    background: #FFF;
+}
+
+/* RESTAURANT 2 ////////////////////////////////////// */
+
+/* general */
+#rest2 {
+    font-family: "Rest1FontBody", sans-serif;
+}
+
+/* general section */
+#rest2 .sectionContainer {
+    border-bottom-color:#ff5252;
+}
+
+#rest2 .profileBold {
+    font-family: "Rest2FontBodyBold", sans-serif;
+}
+
+/* header/footer */
+#rest2 header {
+    font-family: "Rest1FontTitle", sans-serif;
+    background: #ff5252;
+    border-bottom: solid 5px #ff5252;
+    font-size: 14px;
+}
+#rest2 footer{
+    background: #fff;
+}
+
+/* footer subnav */
+
+
+#rest2 .logo {
+    width: 80%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* home */
+#rest2 .bar {
+    background: #ff5252;
+    padding: 3px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #FFF;
+}
+
+
+#rest2 .photoAddress h3{
+    font-size: 16px;
+}
+
+#rest2 .photoCount {
+    border-color: #bd5858;
+    font-size: 14px;
+
+}
+
+#rest2 .hours h2 {
+    color: #ff5252;
+    border-bottom-color: #ff5252;
+}
+
+#rest2 .hours p {
+    color: #b22727;
+}
+
+#rest2 .profile {
+    border-bottom-color: #ff5252;
+}
+
+/* general specials/reservations */
+#rest2 .sectionBanner {
+    font-family: "Rest2FontTitle", sans-serif;
+}
+
+/* specials */
+#rest2 .nightContainer {
+    border-bottom-color: #9e1c1c;
+}
+
+#rest2 .nightContainer ul {
+    color: #9e1c1c;
+}
+
+#rest2 .sub {
+    color: #fff;
+}
+
+/* reservations */
+#rest2 .reservations .sectionContainer {
+    color: #ff5252;
+}
+
+#rest2 .reservations h2 {
+    border-bottom: solid 1px #ff5252;
+}
+
+#rest2 input, #rest2 select, #rest2 textarea {
+    border-color: #ff5252;
+    font-family: "Rest2FontBody", sans-serif;
+}
+
+#rest2 input:focus, #rest2 select:focus, #rest2 textarea:focus {
+    outline: none;
+    background: rgba(158, 28, 28, 0.05);
+}
+
+#rest2 .reserve {
+    border-color: #fff !important;
+    color: #FFF;
+    background: #ff5252;
+}
+
+#rest2 .reserve:hover {
+    border-color: #ff5252 !important;
+    color: #ff5252;
+    background: #fff;
+}
+
+/* RESTAURANT 3 ////////////////////////////////////// */
+
+/* general */
+
+
+/* general section */
+
+
+/* header/footer */
+#rest3{
+    font-family: "Rest1FontBody", sans-serif;
+}
+#rest3 header {
+    font-family: "Rest1FontTitle", sans-serif;
+    background: #ff5252;
+    border-bottom: solid 5px #ff5252;
+}
+
+#rest3 footer{
+    background: #fff;
+}
+
+/* footer subnav */
+
+
+#rest3 .logo {
+    width: 80%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* home */
+#rest3 .bar {
+    background: #ff5252;
+    padding: 3px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+#rest3 .photoCount {
+    border-color: #ff5252;
+}
+
+#rest3 .hours h2 {
+    color: #ff5252;
+    border-bottom-color: #ff5252;
+}
+
+#rest3 .hours p {
+    color: #ff5252;
+}
+
+#rest3 .profile {
+    border-bottom-color: #ff5252;
+}
+
+/* general specials/reservations */
+#rest3 .sectionBanner {
+    font-family: "Rest3FontTitle", sans-serif;
+    line-height: 140%;
+}
+
+/* specials */
+#rest3 .nightContainer {
+    border-bottom-color: #ff5252;
+}
+
+#rest3 .nightContainer ul {
+    color: #ff5252;
+}
+
+#rest3 .sub {
+    color: #ff5252;
+}
+
+/* reservations */
+#rest3 .reservations .sectionContainer {
+    color: #ff5252;
+}
+
+#rest3 .reservations h2 {
+    border-bottom: solid 1px #ff5252;
+}
+
+#rest3 input, #rest3 select, #rest3 textarea {
+    border-color: #ff5252;
+    font-family: "Rest3FontBody", sans-serif;
+}
+
+#rest3 input:focus, #rest3 select:focus, #rest3 textarea:focus {
+    outline: none;
+    background: rgba(255, 193, 5, 0.05);
+}
+
+#rest3 .reserve {
+    border-color: #FFF !important;
+    color: #FFF;
+    background: #ff5252;
+}
+
+#rest3 .reserve:hover {
+    border-color: #ff5252 !important;
+    color: #ff5252;
+    background: #FFF;
+}

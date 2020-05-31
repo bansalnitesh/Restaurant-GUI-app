@@ -1,0 +1,495 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <!-- meta tag to make sure content is same width as device and not scalabl -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>Family Of Eatries</title>
+    
+    <!-- link to css files -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    
+    <!-- link to js files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    
+</head>
+
+<body>
+    <!-- MENU -->
+    <main id="menu">
+        <header><img class="userid" src="img/userid.png" alt="userid"><div><h2>NITESH BANSAL<br></h2><p>Your Order</p></div></header>
+        <div id="backToLanding" class="menuBtn"><img src="img/home.png" alt="Home" /><span>Select a New Restaurant</span></div>
+        <div id="contact" class="menuBtn"><img class="contactIcon" src="img/reservations_icon._menupng.png" alt="Contact"/><span>Contact Family of Eateries</span></div>
+        <div id="about" class="menuBtn"><img src="img/about_icon.svg" alt="About" /><span>About Family of Eateries</span></div>
+    </main>
+    <!-- SPLASH SCREEN -->
+    <main id="splash">
+		<div id="splash_container">FAMILY OF EATERIES</div>
+    </main>
+    <!-- LANDNG SCREEN -->
+    <main id="landing">
+        <div class="sectionBanner">Choose A Restaurant</div>
+        <div id="logo1" class="landingLogos">
+            <img class="Ceviche" src="img/logo_ceviche.png" alt="Ceviche" />
+        </div>
+        <div id="logo2" class="landingLogos">
+            <img class="Birch_Bistro" src="img/LOGO_BIRCH_bistro.png" alt="Birch_Bistro" />
+        </div>
+        <div id="logo3" class="landingLogos">
+            <img class="crispy" src="img/crispy_logo.png" alt="Crispy" />
+        </div>
+        <footer></footer>
+    </main>
+    <!-- RESTAURANT 1 -->
+    <main id="rest1" class="rest">
+        <!-- header -->
+        
+            <img class="hamburger" data-click-state="1" src="img/hamburger.gif.png" alt="Menu" />
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <img class="intro_photo" src="img/ceviche_intro_1.png" alt="Ceviche" />
+				<div class="rest_logo">
+				<div class="photoAddress reveal">
+					<h3>CEVICHE</h3>
+			       <img class="rating" src="img/star_rating.png" alt="Rating" />
+					<p>(180)<br></p>
+					<div class="time">
+                        <div class="photoCount">25-30 MINS</div>
+                    </div>
+				</div>
+				</div>
+				<div class="location reveal">
+                <h3>Location and Hour:</h3>
+                <div id="loc"><img src="img/location.png" /><div>152 Rue Napoléon,
+                    Montreal, QC
+                    H2W1K8 CANADA</div></div>
+                <div id="hours"><img src="img/hours.png" /><div>Friday-Sunday:10:00 TO 23:00
+                    Monday-Friday: 11:00 TO 21:00 
+                </div></div>
+                </div>
+				
+				
+            </div> 
+		</section>
+		<!-- nightly special menu -->
+		<section class="specials">
+			<div class="sectionbanner">NIGHTLY SPECIALS</div>
+			<div class="sectionContainer">
+				<div class="meal1">
+                    <img src="img/octopus.jpg" alt="meal1" />
+                    <div class="mealdetails">
+					<h2>Octopus Special
+                   </h2> <p1>$15.54</p1>
+                </div>
+				</div>
+				<div class="meal2">
+					<img src="img/ropA.jpg" alt="meal2" />
+                    <div class="mealdetails">
+                        <h2>Ropa Vieja
+                    </h2><p1>$18.76</p1>
+                    </div>
+				</div>
+				<div class="meal3">
+					<img src="img/arroz.jpg" alt="meal1" />
+                    <div class="mealdetails">
+                        <h2>Arroz con Pollo
+                    </h2><p1>$17.96</p1>
+                    </div>
+				</div>
+				<div class="meal4">
+					<img src="img/burger.png" alt="meal2" />
+                    <div class="mealdetails">
+                        <h2>Cheese Burger
+                    </h2><p1>$10.56</p1>
+                    </div>
+				</div>
+			</div>
+		
+		</section>
+		<!-- reservations -->
+        <section class="reservations">
+            <div class="sectionBanner">RESERVATIONS</div>
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form>
+					<p class="reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select name="guests">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
+					</p>
+					 <p class="reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="reveal">
+                        <label for="Email">Email<span>*</span></label>
+                        <input type="text" name="Email" placeholder="abc@abc.com">
+                    </p>
+                    <p class="reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea name="requests" rows="6"></textarea>
+                    </p>
+                    <p class="reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        
+        <!-- footer -->
+        <footer>
+             
+            <div class="specialsIcon" data-section=".specials">
+                <img src="img/menu.png" alt="Specials" />
+            </div>
+            <div class="homeIcon" data-section=".home">
+                <img src="img/home.png" alt="Home" />
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="img/reservations_icon.png" alt="Reservations" />
+            </div> 
+        </footer>
+    </main>
+    <!-- RESTAURANT 2 -->
+   
+    <main id="rest2" class="rest">
+        <!-- header -->
+        <img class="hamburger" data-click-state="1" src="img/hamburger.gif.png" alt="Menu" />
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <img class="intro_photo" src="img/birch_intro.png" alt="Birch bistro" />
+				<div class="rest_logo">
+				<div class="photoAddress reveal">
+					<h3>BIRCH BISTRO</h3>
+				    <img class="rating" src="img/star_rating.png" alt="Rating" />
+                    <p>(123)<br></p>
+                    <div class="time">
+					<img class="timing" src="img/clock.png"	 alt="timing" /> 
+                    <div class="photoCount">25-30 MINS</div>
+                </div>
+				</div>
+				</div>
+				<div class="location reveal">
+                    <h3>Location and Hour:</h3>
+                    <div id="loc"><img src="img/location.png" />218 12 Ave SE,
+                        Calgary, AB
+                        T2G 1G9 CANADA</div>
+                    <div id="hours"><img src="img/hours.png" />Friday-Sunday:10:00 TO 23:00
+                        Monday-Friday: 11:00 TO 21:00 </div>
+                    </div>
+				
+				
+            </div> 
+		</section>
+        <!-- nightly special menu -->
+		<section class="specials">
+			<div class="sectionbanner">NIGHTLY SPECIALS</div>
+			<div class="sectionContainer">
+				<div class="meal1">
+                    <img src="img/salad.jpg" alt="meal1" />
+                    <div class="mealdetails">
+                        <h2>Green Salad
+                    </h2><p1>$7.58</p1>
+                    </div>
+				</div>
+				<div class="meal2">
+					<img src="img/Instant-Pot-Chicken-Noodle-Soup-Recipe-750x498.jpg" alt="meal2" />
+                    <div class="mealdetails">
+                        <h2>Chicken Noodle Soup
+                    </h2><p1>$10.76</p1>
+                    </div>
+				</div>
+				<div class="meal3">
+					<img src="img/chicken pasta.jpg" alt="meal3" />
+                    <div class="mealdetails">
+                        <h2>Chicken Pasta
+                    </h2><p1>$8.45</p1>
+                    </div>
+				</div>
+				<div class="meal4">
+					<img src="img/chicken salad.jpg" alt="meal4" />
+                    <div class="mealdetails">
+                        <h2>Chicken Noodle Salad
+                    </h2><p1>$12.76</p1>
+                    </div>
+				</div>
+			</div>
+		
+		</section>
+		<!-- reservations -->
+        <section class="reservations">
+            <div class="sectionBanner">RESERVATIONS</div>
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        
+		<!-- footer -->
+         <footer>
+             
+            <div class="specialsIcon" data-section=".specials">
+                <img src="img/menu.png" alt="Specials" />
+            </div>
+            <div class="homeIcon" data-section=".home">
+                <img src="img/home.png" alt="Home" />
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="img/reservations_icon.png" alt="Reservations" />
+            </div> 
+        </footer>
+	</main>
+    <!-- RESTAURANT 3 -->
+   
+    <main id="rest3" class="rest">
+        <!-- header -->
+        <img class="hamburger" data-click-state="1" src="img/hamburger.gif.png" alt="Menu" />
+        <!-- home -->
+        <section class="home">
+            <div class="sectionContainer">
+                <img class="intro_photo" src="img/crispy_intro.png" alt="Crispy's" />
+				<div class="rest_logo">
+				<div class="photoAddress reveal">
+					<h3>CRISPY'S</h3>
+				    <img class="rating" src="img/star_rating.png" alt="Rating" />
+					<p>(250)<br></p>
+					<div class="time">
+                        <img class="timing" src="img/clock.png"	 alt="timing" /> 
+                        <div class="photoCount">25-30 MINS</div>
+                    </div>
+				</div>
+				</div>
+				<div class="location reveal">
+                <h3>Location and Hour:</h3>
+                <div id="loc"><img src="img/location.png" />145 King St W,
+                    Toronto, ON
+                    M5H 1J8 CANADA</div>
+                <div id="hours"><img src="img/hours.png" />Friday-Sunday:10:00 TO 23:00
+                    Monday-Friday: 11:00 TO 21:00 </div>
+                </div>
+				
+				
+            </div> 
+		</section>
+		
+		<!-- nightly special meu -->
+		<section class="specials">
+			<div class="sectionbanner">NIGHTLY SPECIALS</div>
+			<div class="sectionContainer">
+				<div class="meal1">
+					<img src="img/mcdonalds-fish-chips.jpg" alt="meal1" />
+                    <div class="mealdetails">
+                        <h2>Fish and Chips
+                    </h2><p1>$9.54</p1>
+                    </div>
+				</div>
+				<div class="meal2">
+					<img src="img/UE-product_11342_en.jpg" alt="meal2" />
+                    <div class="mealdetails">
+                        <h2>Make Your Meal
+                    </h2><p1>-----</p1>
+                    </div>
+				</div>
+				<div class="meal3">
+					<img src="img/poutine.jpg" alt="meal1" />
+                    <div class="mealdetails">
+                        <h2>Meat Poutine
+                    </h2><p1>$5.56</p1>
+                    </div>
+				</div>
+				<div class="meal4">
+					<img src="img/salad.jpg" alt="meal2" />
+                    <div class="mealdetails">
+                        <h2>Caesar Salad
+                    </h2><p1>$7.36</p1>
+                    </div>
+				</div>
+			</div>
+		
+		</section>
+		<!-- reservations -->
+        <section class="reservations">
+            <div class="sectionBanner">RESERVATIONS</div>
+            <div class="sectionContainer">
+                <h2 class="reveal">Fill in the form below</h2>
+                <p class="reveal">* required</p>
+                <form>
+                    <p class="reveal">
+                        <label for="name">Name<span>*</span></label>
+                        <input type="text" name="name" placeholder="First and Last Name">
+                    </p>
+                    <p class="reveal">
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="text" name="phone" placeholder="(123) 456-7890">
+                    </p>
+                    <p class="reveal">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" name="date" placeholder="yyyy-mm-dd" />
+                    </p>
+                    <p class="reveal">
+                        <label for="time">Time<span>*</span></label>
+                        <select name="time">
+                            <option>Select a time...</option>
+                            <option value="6:00 pm">6:00 pm</option>
+                            <option value="6:30 pm">6:30 pm</option>
+                            <option value="7:00 pm">7:00 pm</option>
+                            <option value="7:30 pm">7:30 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="8:30 pm">8:30 pm</option>
+                            <option value="9:00 pm">9:00 pm</option>
+                            <option value="9:30 pm">9:30 pm</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="guests">Number of Guests<span>*</span></label>
+                        <select name="time">
+                            <option>Select the number of guests...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </p>
+                    <p class="reveal">
+                        <label for="requests">Special Requests</label>
+                        <textarea name="requests" rows="4"></textarea>
+                    </p>
+                    <p class="reveal">
+                        <input type="submit" class="reserve" name="Submit" />
+                    </p>
+                </form>
+            </div>
+        </section>
+        <!-- footer -->
+        
+              <footer>
+             
+            <div class="specialsIcon" data-section=".specials">
+                <img src="img/menu.png" alt="Specials" />
+            </div>
+            <div class="homeIcon" data-section=".home">
+                <img src="img/home.png" alt="Home" />
+            </div>
+            <div class="reservationsIcon" data-section=".reservations">
+                <img src="img/reservations_icon.png" alt="Reservations" />
+            </div> 
+        </footer>
+            
+	</main>
+    
+    <script>
+        // hide all main elements above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=menu, 1=splash, 2=landing, 3=rest 1, 4=rest 2, 5=rest 3
+        //$("main:gt(1)").hide();
+        
+        // hide all section elements (in the selected restaurant/main screen)
+        // above the selected index in the ()
+        // comment out when running animtion scripts
+        // 0=home, 1=specials, 2=reservations
+        //$("#rest1 section:gt(0)").hide();
+    </script>
+    
+    <!-- link to main js file -->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
